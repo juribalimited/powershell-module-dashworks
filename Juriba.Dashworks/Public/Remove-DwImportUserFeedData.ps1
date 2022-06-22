@@ -35,7 +35,7 @@ function Remove-DwImportUserFeedData {
         [int]$ImportId
     )
 
-    $uri = "{0}/apiv2/imports/devices/{1}/items/" -f $Instance, $ImportId
+    $uri = "{0}/apiv2/imports/users/{1}/items/" -f $Instance, $ImportId
     $headers = @{'x-api-key' = $APIKey}
 
     try {
